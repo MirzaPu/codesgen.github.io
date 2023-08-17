@@ -165,4 +165,8 @@ function refreshPage() {
   // Reload the page to reset all values
   window.location.reload();
 }
-
+// Add event listener to the "Back" button
+const backButton = document.getElementById('back-button');
+backButton.addEventListener('click', () => {
+  history.back(); // Navigate back to the previous screen
+});
