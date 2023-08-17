@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Codes Generator Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>CODES GENERATOR PROJECT</h1>
+  <table>
+    <colgroup>
+      <col style="width: 33%;">
+      <col style="width: 33%;">
+      <col style="width: 33%;">
+      <col style="width: 33%;">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Daily activity</th>
+        <th>Time spent (in minutes)</th>
+        <th>Comment</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Table rows will be added dynamically using JavaScript -->
+      <tr>
+        <td>
+          <select id="daily-activity-dropdown">
+            <option value="CSP">CSP</option>
+            <option value="SCT">SCT</option>
+            <option value="CAP">CAP</option>
+            <option value="OPS">OPS</option>
+          </select>
+        </td>
+        <td><input type="number" min="0" id="time-spent-input"></td>
+        <td><input type="text" id="comment-input"></td>
+        <td>
+          <button id="add-row-button">Add Row</button>
+        </td>
+      </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+          <td colspan="4">
+            <button id="generate-text-button">Generate code</button>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <div id="generated-text-container"></div>
+         <div id="copy-code-container" style="display: none;">
+           <button id="copy-code-button">Copy Code</button>     
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+    <!-- Add the refresh button here -->
+    <button id="refresh-button">Refresh</button>
+  </div>
+</div>
+<button id="back-button">Go Back to Home Page</button>
+</div>
+  <script src="scriptproject.js"></script>
+</body>
+</html>
