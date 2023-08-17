@@ -2,7 +2,7 @@
   "name": "codesgen",
   "version": "1.0.0",
   "description": "Generating time tracking codes",
-  "main": "index.js",
+  "main": "landing.js",
   "scripts": {
     "test": "test"
   },
